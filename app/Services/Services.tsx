@@ -4,8 +4,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import PageWrapper from "@/src/components/PageWrapper";
 import SectionInner from "@/src/components/SectionInner";
-import Lottie from "lottie-react";
 import animation from "@/public/logoanimation.json";
+import ClientLottie from "@/src/components/ClientLottie";
 
 const services = [
   {
@@ -165,7 +165,7 @@ export const Services = ({ isActive = false }: { isActive?: boolean }) => {
                     ].join(" ")}
                   >
                     <div className="lottie-services h-full w-full">
-                      <Lottie
+                      <ClientLottie
                         animationData={animation}
                         loop={false}
                         style={{ width: "100%", height: "100%" }}

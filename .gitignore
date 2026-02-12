@@ -39,10 +39,6 @@ yarn-error.log*
 *.env
 
 .idea
-/pages
-/app/proposals
-/middleware.ts
 node_modules
 .next
 .DS_Store
-.env

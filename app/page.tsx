@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-// import dynamic from "next/dynamic";
 import NavModal from "../src/components/NavModal";
 import Header from "../src/components/Header";
 import ContactUs from "./ContactUs";
@@ -10,35 +9,6 @@ import AboutUs from "./AboutUs";
 import { Process } from "./process/Process";
 import { Portfolio } from "./Portfolio";
 import { Services } from "./Services";
-
-// const Portfolio = dynamic(
-//   () => import("./Portfolio").then((m) => m.Portfolio as any),
-//   { ssr: false }
-// );
-// const Services = dynamic(
-//   () => import("./Services").then((m) => m.Services as any),
-//   {
-//     ssr: false,
-//   }
-// );
-// const Landing = dynamic(
-//   () => import("./Landing").then((m) => m.default as any),
-//   {
-//     ssr: false,
-//   }
-// );
-// const AboutUs = dynamic(
-//   () => import("./AboutUs").then((m) => m.default as any),
-//   {
-//     ssr: false,
-//   }
-// );
-// const Process = dynamic(
-//   () => import("./process").then((m) => m.Process as any),
-//   {
-//     ssr: false,
-//   }
-// );
 
 const LANDING_ID = "landing";
 

@@ -2,11 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import PageWrapper from "@/src/components/PageWrapper";
 import { NextPage } from "next";
 import { useIntersectionObserver } from "@/src/hooks";
-import Lottie from "lottie-react";
 import animation from "@/public/logoanimation.json";
 import Stars from "@/src/components/Stars";
 import Button from "@/src/components/Button";
 import Link from "next/link";
+import ClientLottie from "@/src/components/ClientLottie";
 
 const Landing: NextPage = () => {
   const triggerRef = useRef();
@@ -67,7 +67,7 @@ const Landing: NextPage = () => {
 
             <div className="flex w-full justify-center lg:w-1/2 lg:justify-end">
               <div className="w-[72vw] max-w-[560px] lg:w-[36vw]">
-                <Lottie
+                <ClientLottie
                   animationData={animation}
                   loop={false}
                   style={{ width: "100%", height: "100%" }}
