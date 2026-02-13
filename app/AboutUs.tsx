@@ -38,10 +38,10 @@ const AboutUs: NextPage = () => {
           </div>
           <p>
             Proudly headquartered in Denver, Colorado, Arcron Information
-            Systems is your AI-powered web and software solutions partner. We
-            help your business reach market faster, streamline operations, and
-            drive down costs through tailored, AI-driven integrations,
-            web, and software solutions.
+            Systems is your AI, web, and software partner. We help businesses
+            reach market faster, streamline operations, and reduce costs through
+            tailored, AI-driven integrations and custom web and software
+            solutions.
           </p>
           <p>
             For Arcron Information Systems, technology is the medium for solving
