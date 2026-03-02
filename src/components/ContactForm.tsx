@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect, useMemo, useState } from "react";
 import Button from "./Button";
 import Text from "./Text";
@@ -11,7 +13,7 @@ const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [uriParams, setUriParams] = useState<[string, string][]>([]);
   const params = useMemo(
-    () => new URLSearchParams(window?.location?.search),
+    () => new URLSearchParams(typeof window !== "undefined" ? window.location.search : ""),
     [],
   );
 
