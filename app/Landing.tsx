@@ -7,6 +7,8 @@ import Stars from "@/src/components/Stars";
 import Button from "@/src/components/Button";
 import Link from "next/link";
 import ClientLottie from "@/src/components/ClientLottie";
+import { useRouter } from "next/navigation";
+import OutlineText from "@/src/components/OutlineText";
 
 const Landing: NextPage = () => {
   const triggerRef = useRef();
@@ -17,6 +19,8 @@ const Landing: NextPage = () => {
   const [displayAll, setDisplayAll] = useState(false);
   const [hideAll, setHideAll] = useState(true);
   const timeoutRef = useRef(null);
+
+  const router = useRouter();
 
   useEffect(() => {
     if (display) {
@@ -45,23 +49,19 @@ const Landing: NextPage = () => {
             ].join(" ")}
           >
             <div className="w-full lg:w-1/2">
-              <h3
-                style={{
-                  WebkitTextStroke: "1px var(--primarylight)",
-                }}
-                className="mb-8 text-5xl tracking-wide text-uppercase font-['MixCase'] text-transparent sm:text-6xl"
-              >
-                {"//Merge your vision with code"}
-              </h3>
+              <OutlineText text="Merge your vision with code" size="text-5xl" />
               <p className="mb-4 max-w-xl text-sm">
                 Contact us to schedule a free consultation to hear how Arcron
                 can help supercharge your business to reach market faster,
                 streamline operations, and drive down costs with tailored,
                 AI-driven integrations, web, and software solutions.
               </p>
-              <Link href="#contactus" passHref>
-                <Button text="Contact Us" />
-              </Link>
+              <Button
+                text="Contact Us"
+                onClick={() => {
+                  router.push("#contactus");
+                }}
+              />
               <Stars />
             </div>
 

@@ -5,13 +5,16 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pdf:sow": "node scripts/export-sow-pdf.mjs",
+    "build:pdf:sow": "npm run build && npm run pdf:sow"
   },
   "dependencies": {
     "@react-spring/parallax": "^9.7.3",
     "@react-spring/web": "^9.7.3",
     "lottie-react": "^2.4.0",
     "next": "^14.0.1",
+    "puppeteer": "^24.37.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

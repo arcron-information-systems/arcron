@@ -5,12 +5,13 @@ import PageWrapper from "@/src/components/PageWrapper";
 import SectionInner from "@/src/components/SectionInner";
 import { NextPage } from "next";
 import Link from "next/link";
+import OutlineText from "@/src/components/OutlineText";
 
 const AboutUs: NextPage = () => {
   return (
     <PageWrapper id={"aboutus"}>
       <SectionInner>
-        <h2 className={"special-h"}>//ABOUT</h2>
+        <OutlineText text="ABOUT" />
 
         <section className={"flex flex-col gap-6"}>
           <p>

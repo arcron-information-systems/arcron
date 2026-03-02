@@ -6,6 +6,7 @@ import PageWrapper from "@/src/components/PageWrapper";
 import SectionInner from "@/src/components/SectionInner";
 import animation from "@/public/logoanimation.json";
 import ClientLottie from "@/src/components/ClientLottie";
+import OutlineText from "@/src/components/OutlineText";
 
 const services = [
   {
@@ -126,7 +127,7 @@ export const Services = ({ isActive = false }: { isActive?: boolean }) => {
       `}</style>
 
       <SectionInner>
-        <h2 className="special-h">//SERVICES</h2>
+        <OutlineText text="SERVICES" />
 
         {useStackedLayout ? (
           <div className="mx-auto flex w-full max-w-2xl flex-col gap-3">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Button from "./Button";
 import Text from "./Text";
 
@@ -9,6 +9,15 @@ const ContactForm = () => {
   const [description, setDescription] = useState("");
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [uriParams, setUriParams] = useState<[string, string][]>([]);
+  const params = useMemo(
+    () => new URLSearchParams(window?.location?.search),
+    [],
+  );
+
+  useEffect(() => {
+    setUriParams(Array.from(params.entries()));
+  }, [params]);
 
   const submitForm = async (e: any) => {
     e.preventDefault();
@@ -41,6 +50,9 @@ const ContactForm = () => {
         onSubmit={submitForm}
       >
         <input type="hidden" name="form-name" value="contact" />
+        {uriParams.map(([key, value]) => (
+          <input type="hidden" key={key} name={key} value={value} />
+        ))}
 
         <section className="mb-8 flex flex-col gap-4 sm:flex-row sm:justify-between">
           <div className="flex w-full flex-col gap-4 text-[var(--darkwhite)] sm:flex-1 justify-between">

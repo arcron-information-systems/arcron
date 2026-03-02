@@ -42,3 +42,4 @@ yarn-error.log*
 node_modules
 .next
 .DS_Store
+proposal-data

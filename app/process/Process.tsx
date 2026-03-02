@@ -3,6 +3,7 @@
 
 import React, { useEffect, useRef, useState } from "react";
 import { NextPage } from "next";
+import OutlineText from "@/src/components/OutlineText";
 
 const ProcessList = [
   {
@@ -77,7 +78,7 @@ const Process: NextPage = () => {
       {/* Sticky container: pins to the top while user scrolls through the tall section */}
       <div className="sticky top-0 flex min-h-screen w-full items-center justify-center py-6 sm:py-0">
         <div className="mx-4 flex w-full max-w-[94%] flex-col sm:mx-12 sm:max-w-[75%]">
-          <h2 className="special-h mb-3 sm:mb-4">//THE PROCESS</h2>
+          <OutlineText text="PROCESS" />
           <p className="mb-5 text-sm text-[var(--primarydark)] sm:mb-8 sm:text-base">
             Getting a project from idea to launch can be overwhelming. We
             believe in a highly-communicative, transparent, and collaborative
