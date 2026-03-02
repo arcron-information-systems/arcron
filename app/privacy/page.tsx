@@ -19,9 +19,10 @@ export default function PrivacyPage() {
       </p>
 
       <p>
-        This Privacy Policy explains how <strong>[Your Company Name]</strong>{" "}
-        (“we,” “us,” or “our”) collects, uses, and shares information when you
-        visit <strong>[yourdomain.com]</strong> (the “Site”) or contact us.
+        This Privacy Policy explains how{" "}
+        <strong>Arcron Information Systems</strong> (“we,” “us,” or “our”)
+        collects, uses, and shares information when you visit{" "}
+        <strong>arcron.systems</strong> (the “Site”) or contact us.
       </p>
 
       <h2>Information We Collect</h2>
