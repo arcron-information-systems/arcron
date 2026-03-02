@@ -1,4 +1,3 @@
-import { sowSampleData } from "../../../proposal-data/data";
 import { SowDocument } from "@/src/proposals/sow/SowDocument";
 
 export const metadata = {
@@ -6,5 +5,5 @@ export const metadata = {
 };
 
 export default function SowProposalPage() {
-  return <SowDocument data={sowSampleData} />;
+  return <SowDocument data={undefined} />;
 }

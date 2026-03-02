@@ -13,7 +13,8 @@ function Bullets({ items }: { items: string[] }) {
   );
 }
 
-export function SowDocument({ data }: { data: SOWData }) {
+export function SowDocument({ data }: { data: SOWData | undefined }) {
+  if (!data) return null;
   const primaryClient = data.client.primaryContacts?.[0];
 
   const legalLines: string[] = [];
@@ -237,7 +238,7 @@ export function SowDocument({ data }: { data: SOWData }) {
 
           <div className="sow-grid2">
             <div className="sow-card">
-            <div className="sow-card-title-sm">Client</div>
+              <div className="sow-card-title-sm">Client</div>
               <Bullets items={data.clientAssumptions} />
             </div>
             <div className="sow-card">
