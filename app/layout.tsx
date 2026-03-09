@@ -1,5 +1,7 @@
 import "@/public/styles/globals.css";
 import { Metadata, Viewport } from "next";
+import NextHead from "next/head";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: {
@@ -34,6 +36,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <NextHead>
+        <Script
+          id="sa-dynamic-optimization"
+          strategy="afterInteractive"
+          data-uuid="c282789f-0a74-49d6-a2ed-02252f5d62a8"
+          src="https://dashboard.searchatlas.com/scripts/dynamic_optimization.js"
+        />
+      </NextHead>
       <body>{children}</body>
     </html>
   );
