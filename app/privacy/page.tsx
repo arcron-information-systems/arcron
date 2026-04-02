@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "Learn how Arcron Information Systems collects, uses, and protects your data. Read our full privacy policy.",
+};
+
 export default function PrivacyPage() {
   return (
     <section

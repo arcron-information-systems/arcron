@@ -39,15 +39,17 @@ const AboutUs: NextPage = () => {
           </div>
           <p>
             Proudly headquartered in Denver, Colorado, Arcron Information
-            Systems is your AI, web, and software partner. We help businesses
-            reach market faster, streamline operations, and reduce costs through
-            tailored, AI-driven integrations and custom web and software
-            solutions.
+            Systems specializes in taking AI-built prototypes and vibe-coded
+            MVPs to production. Whether you used Cursor, Bolt, Replit, or had
+            someone build a proof of concept, we turn it into software that
+            scales, performs, and is built to last.
           </p>
           <p>
-            For Arcron Information Systems, technology is the medium for solving
-            current and future challenges by combining logic and art, people and
-            technology. Arcron: Begin boundlessly.
+            We&apos;re also a full-service development partner for businesses
+            that need custom web applications, AI integrations, and mobile apps
+            from the ground up. Technology is the medium for solving current and
+            future challenges by combining logic and art, people and technology.
+            Arcron: Begin boundlessly.
           </p>
           <p>
             <Link href={"#contactus"}>

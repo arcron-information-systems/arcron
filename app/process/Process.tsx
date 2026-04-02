@@ -9,12 +9,12 @@ const ProcessList = [
   {
     title: "Discovery",
     description:
-      "Let's start with a discovery call to understand your business and your needs. A quick, zero-pressure conversation will determine if Arcron is the right fit for you or if we can point you in the right direction. We're here to be helpful, not pushy.",
+      "Whether you have a working prototype or a napkin sketch, we'll start by understanding where you are and where you need to go. We'll review what you've built, assess what's working, and identify the gaps. A quick, zero-pressure conversation to determine if Arcron is the right fit for you. We're here to be helpful, not pushy.",
   },
   {
     title: "Design & Plan",
     description:
-      "We then move on to the design phase to create the game plan. We'll talk about the scope and what it means for the project to be considered complete, the timeline, budget, risks, communication channels, project management tools, and the expectations for each party.",
+      "We create the game plan. For existing prototypes, we'll map out what to keep, what to refactor, and what to rebuild. For greenfield projects, we'll architect from scratch. Either way, we'll align on scope, timeline, budget, risks, and expectations so there are no surprises.",
   },
   {
     title: "Development & Feedback Loop",
@@ -80,11 +80,10 @@ const Process: NextPage = () => {
         <div className="mx-4 flex w-full max-w-[94%] flex-col sm:mx-12 sm:max-w-[75%]">
           <OutlineText text="PROCESS" />
           <p className="mb-5 text-sm text-[var(--primarydark)] sm:mb-8 sm:text-base">
-            Getting a project from idea to launch can be overwhelming. We
+            Taking a prototype or project to production can be overwhelming. We
             believe in a highly-communicative, transparent, and collaborative
-            approach to project development and follow SDLC (Software
-            Development Life Cycle) best practices to guide you every step of
-            the way.
+            approach and follow SDLC (Software Development Life Cycle) best
+            practices to guide you every step of the way.
           </p>
 
           {/* Cards */}

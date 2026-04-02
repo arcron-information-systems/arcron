@@ -10,6 +10,12 @@ import OutlineText from "@/src/components/OutlineText";
 
 const services = [
   {
+    label: "Prototype to Production",
+    icon: "🚀",
+    description:
+      "Turn your AI-built prototype or vibe-coded MVP into production-ready software. We audit, refactor, test, and deploy so it scales, performs, and is built to last.",
+  },
+  {
     label: "AI Integration & Automation",
     icon: "🤖",
     description:
@@ -19,7 +25,7 @@ const services = [
     label: "Proof of Concepts",
     icon: "💡",
     description:
-      "Pressure-test your big ideas with focused prototypes that prove value early, reduce risk, and give your team confidence before major investment.",
+      "Validate your idea before committing to a full build. We create focused prototypes that prove value early, reduce risk, and give you confidence before major investment.",
   },
   {
     label: "Custom Websites",

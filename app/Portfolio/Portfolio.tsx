@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { NextPage } from "next";
 import Image from "next/image";
+import OutlineText from "@/src/components/OutlineText";
 import advocatemockup from "@/public/images/advocatemockup.png";
 import advocatepuzzle from "@/public/images/advocatepuzzle.png";
 import prevent22logo from "@/public/images/prevent22.png";
@@ -116,6 +117,9 @@ export const Portfolio: NextPage = () => {
 
   return (
     <section id={"portfolio"} className={"portfolio-bg"}>
+      <div className="sr-only">
+        <OutlineText text="PORTFOLIO" />
+      </div>
       <Parallax
         className={styles.container}
         ref={parallax}

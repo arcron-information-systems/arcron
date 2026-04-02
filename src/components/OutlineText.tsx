@@ -2,10 +2,12 @@ const OutlineText = ({
   text,
   size = "lg",
   mb = true,
+  as: Tag = "h2",
 }: {
   text: string;
   size?: "sm" | "md" | "lg" | string;
   mb?: boolean;
+  as?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }) => {
   const sizeClass =
     size === "sm"
@@ -17,7 +19,7 @@ const OutlineText = ({
           : size;
   const mbClass = mb ? "mb-8 " : "";
   return (
-    <h2
+    <Tag
       style={{
         WebkitTextStroke: "1px var(--primarylight)",
       }}
@@ -25,7 +27,7 @@ const OutlineText = ({
     >
       {"//"}
       {text}
-    </h2>
+    </Tag>
   );
 };
 

@@ -49,12 +49,12 @@ const Landing: NextPage = () => {
             ].join(" ")}
           >
             <div className="w-full lg:w-1/2">
-              <OutlineText text="Merge your vision with code" size="text-5xl" />
+              <OutlineText text="From prototype to production" size="text-5xl" as="h1" />
               <p className="mb-4 max-w-xl text-sm">
-                Contact us to schedule a free consultation to hear how Arcron
-                can help supercharge your business to reach market faster,
-                streamline operations, and drive down costs with tailored,
-                AI-driven integrations, web, and software solutions.
+                You&apos;ve built something. Now let&apos;s make it
+                production-ready. Arcron takes your AI-built prototype or MVP
+                and turns it into software that scales, performs, and is built
+                to last. Need to start from scratch? We do that too.
               </p>
               <Button
                 text="Contact Us"

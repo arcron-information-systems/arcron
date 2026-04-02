@@ -111,7 +111,7 @@ const ContactForm = () => {
                 "w-full",
                 description ? "outline-none !border-[var(--darkwhite)]" : "",
               ].join(" ")}
-              placeholder={"Tell us about your project"}
+              placeholder={"Tell us about your project or prototype"}
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
