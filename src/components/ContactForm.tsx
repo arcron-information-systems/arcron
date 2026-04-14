@@ -13,7 +13,10 @@ const ContactForm = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [uriParams, setUriParams] = useState<[string, string][]>([]);
   const params = useMemo(
-    () => new URLSearchParams(typeof window !== "undefined" ? window.location.search : ""),
+    () =>
+      new URLSearchParams(
+        typeof window !== "undefined" ? window.location.search : "",
+      ),
     [],
   );
 
@@ -103,7 +106,7 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <div className="w-full text-[var(--darkwhite)] sm:flex-1">
+          <div className="w-full text-[var(--darkwhite)] sm:flex-1 h-[300px]">
             <textarea
               name={"description"}
               required
@@ -111,7 +114,9 @@ const ContactForm = () => {
                 "w-full",
                 description ? "outline-none !border-[var(--darkwhite)]" : "",
               ].join(" ")}
-              placeholder={"Tell us about your project or prototype"}
+              placeholder={
+                "Tell us about your project or prototype. What stage is your project in? Where would you like to take it? What's your timeline?"
+              }
               value={description}
               onChange={(e) => setDescription(e.target.value)}
             />
