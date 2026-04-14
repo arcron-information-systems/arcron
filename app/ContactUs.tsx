@@ -11,6 +11,12 @@ const ContactUs: NextPage = () => {
     <PageWrapper id={"contactus"}>
       <SectionInner>
         <OutlineText text="CONTACT" />
+        <p className="mb-8 text-sm">
+          Once you submit the form, we&apos;ll get back to you within 24 hours. We offer
+          a free, 30-minute discovery call to see if Arcron would be a good fit
+          for your project or if we can point you in the right direction.
+          We&apos;re here to be helpful, not pushy.
+        </p>
         <ContactForm />
       </SectionInner>
     </PageWrapper>
