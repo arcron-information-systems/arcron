@@ -371,9 +371,14 @@ button svg {
     height: 100vh;
   }
 
+  .page-wrapper {
+    padding: 0 1.5rem;
+  }
+
   .section-inner {
     max-width: 100%;
     width: 100%;
+    min-width: 0;
   }
 
   .portfolio-wrapper {
@@ -400,7 +405,7 @@ button svg {
   }
 
   .section-inner {
-    margin: 1.5rem;
+    margin: 1.5rem 0;
   }
 
   textarea {

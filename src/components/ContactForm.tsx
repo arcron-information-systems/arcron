@@ -7,7 +7,6 @@ import Text from "./Text";
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
   const [description, setDescription] = useState("");
   const [response, setResponse] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -59,54 +58,37 @@ const ContactForm = () => {
           <input type="hidden" key={key} name={key} value={value} />
         ))}
 
-        <section className="mb-8 flex flex-col gap-4 sm:flex-row sm:justify-between">
-          <div className="flex w-full flex-col gap-4 text-[var(--darkwhite)] sm:flex-1 justify-between">
-            <div className="w-full">
-              <input
-                name={"name"}
-                required
-                className={[
-                  "w-full",
-                  name ? "outline-none !border-[var(--darkwhite)]" : "",
-                ].join(" ")}
-                placeholder={"Name"}
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-
-            <div className="w-full">
-              <input
-                name={"email"}
-                type={"email"}
-                required
-                className={[
-                  "w-full",
-                  email ? "outline-none !border-[var(--darkwhite)]" : "",
-                ].join(" ")}
-                placeholder={"Email"}
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
-
-            <div className="w-full">
-              <input
-                name={"phone"}
-                type={"tel"}
-                required
-                className={[
-                  "w-full",
-                  phone ? "outline-none !border-[var(--darkwhite)]" : "",
-                ].join(" ")}
-                placeholder={"Phone"}
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
-              />
-            </div>
+        <section className="mb-8 flex flex-col gap-4 text-[var(--darkwhite)]">
+          <div className="w-full">
+            <input
+              name={"name"}
+              required
+              className={[
+                "w-full",
+                name ? "outline-none !border-[var(--darkwhite)]" : "",
+              ].join(" ")}
+              placeholder={"Name"}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
           </div>
 
-          <div className="w-full text-[var(--darkwhite)] sm:flex-1 h-[300px]">
+          <div className="w-full">
+            <input
+              name={"email"}
+              type={"email"}
+              required
+              className={[
+                "w-full",
+                email ? "outline-none !border-[var(--darkwhite)]" : "",
+              ].join(" ")}
+              placeholder={"Email"}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+
+          <div className="w-full h-[300px]">
             <textarea
               name={"description"}
               required
@@ -115,7 +97,7 @@ const ContactForm = () => {
                 description ? "outline-none !border-[var(--darkwhite)]" : "",
               ].join(" ")}
               placeholder={
-                "Tell us about your project or prototype. What stage is your project in? Where would you like to take it? What's your timeline?"
+                "Tell us about your project, problem, or prototype. What stage is your project in? Where would you like to take it? What's your timeline?"
               }
               value={description}
               onChange={(e) => setDescription(e.target.value)}

@@ -13,9 +13,9 @@ const OutlineText = ({
     size === "sm"
       ? "text-2xl"
       : size === "md"
-        ? "text-4xl"
+        ? "text-3xl sm:text-4xl"
         : size === "lg"
-          ? "text-6xl"
+          ? "text-4xl sm:text-6xl"
           : size;
   const mbClass = mb ? "mb-8 " : "";
   return (

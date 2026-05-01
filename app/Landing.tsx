@@ -45,7 +45,7 @@ const Landing: NextPage = () => {
           <div
             className={[
               displayAll ? "fadein" : "fadeout",
-              "relative z-[1] flex w-full flex-col gap-6 p-4 lg:flex-row lg:items-center lg:justify-between lg:p-8",
+              "relative z-[1] flex w-full flex-col gap-6 py-4 sm:p-4 lg:flex-row lg:items-center lg:justify-between lg:p-8",
             ].join(" ")}
           >
             <div className="w-full lg:w-1/2">
